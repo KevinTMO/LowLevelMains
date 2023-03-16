@@ -1,4 +1,4 @@
-#include "roadmap"
+#include "roadmap.h"
 
 /**
 *main - will call strToUpper() and pass a string to the function
@@ -10,9 +10,9 @@ int main(void)
 	char s[] = "Roadmap To Full Stack Software Engineer!\n";
 	char *str;
 
+	printf("%s", s);
 	str = strToUpper(s);
 	printf("%s", str);
-	printf("%s", s);
 
 	return (0);
 }
