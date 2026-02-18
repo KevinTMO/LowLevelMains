@@ -8,11 +8,9 @@
  */
 int main(void)
 {
-	dog_t my_dog;
+	dog_t *my_dog;
 
-	my_dog.name = "Django";
-	my_dog.age = 3.5;
-	my_dog.owner = "Jay";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+	my_dog = new_dog(NULL, 3.75, "Jon Snow");
+	printf("My name is %s, my owner is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->owner, my_dog->age);
 	return (0);
 }
